@@ -16,6 +16,11 @@ class TvShowCell: UICollectionViewCell {
     
     var tvShow: TvShow!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        layer.cornerRadius = 5.0
+    }
 
     func configureCell(tvShow: TvShow) {
         self.tvShow = tvShow
@@ -27,6 +32,9 @@ class TvShowCell: UICollectionViewCell {
         
         self.category.text = tvShow.category
         self.thumbImg.loadURL(url: tvShow.imageUrl)
+        
+        self.thumbImg.layer.masksToBounds = true
+        self.thumbImg.layer.cornerRadius = 5.0
     }
     
     
