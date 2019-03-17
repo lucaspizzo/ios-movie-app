@@ -70,6 +70,7 @@
 		A010D2AB223CC64A0049C6BA /* some-shows */ = {
 			isa = PBXGroup;
 			children = (
+				A06BD904223E044000C5008E /* Images */,
 				A010D2D1223DD4560049C6BA /* Config */,
 				A010D2CE223DBC0D0049C6BA /* Controller */,
 				A010D2CB223DB7A40049C6BA /* Service */,
@@ -134,6 +135,13 @@
 				A010D2D4223DDA740049C6BA /* Defaults.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		A06BD904223E044000C5008E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

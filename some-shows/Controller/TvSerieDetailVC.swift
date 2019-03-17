@@ -18,10 +18,20 @@ class TvSerieDetailVC: UIViewController {
     
     @IBOutlet weak var descriptionLbl: UITextView?
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     private var defaults = Defaults()
     
     var tvShow: TvShow?
     
+    @IBAction func showDetail(_ sender: Any) {
+        self.scrollView.setContentOffset(CGPoint(x: 0, y: (categoryLbl?.frame.origin.y)!), animated: true)
+
+    }
+    
+    @IBAction func showImage(_ sender: Any) {
+        self.scrollView.setContentOffset(CGPoint(x: 0, y: (backgroundImage?.frame.origin.y)!), animated: true)
+    }
     
     override func viewDidLoad() {
         self.title = self.tvShow?.name
